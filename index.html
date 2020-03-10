@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas {
+            border: 1px solid darkblue;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <h1 id="title">Game</h1>
+    <p id="score"></p>
+</div>
+<div id="style">
+    <h2 id="WinOrLose"></h2><br>
+    <canvas id="canvas" width="500" height="400"></canvas><br>
+    <button onclick="draw()" type="button">Start</button>
+    <button type="button" onclick="restart()">restart</button>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
