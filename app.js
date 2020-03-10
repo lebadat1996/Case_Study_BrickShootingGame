@@ -48,6 +48,13 @@ let Ball = function (x, y, dx, dy, radius) {
                     ball.dy = -ball.dy;
                     b.isBroken = true;
                     UserScore += 1;
+                    if (UserScore < 5) {
+                        ball.dx++;console.log(ball.dx);
+                        ball.dy++;console.log(ball.dy);
+                    } else {
+                        ball.dx = ball.dx + 2; console.log(ball.dx);
+                        ball.dy = ball.dy + 1;console.log(ball.dy);
+                    }
                     document.getElementById("score").innerHTML = "Score: " + UserScore;
                     if (UserScore === MaxScore) {
                         isGameOver = true;
@@ -59,7 +66,7 @@ let Ball = function (x, y, dx, dy, radius) {
         })
     }
 };
-let ball = new Ball(30, canvas.clientHeight - 40, 2, 2, 10);
+let ball = new Ball(30, canvas.clientHeight - 40, 1, 1, 10);
 
 let Paddle = function (x, y, width, height) {
     this.x = x;
@@ -122,6 +129,7 @@ let Brick = function () {
 let brick = new Brick();
 let UserScore = 0;
 let MaxScore = brick.totalRow * brick.totalCol;
+
 function draw() {
     if (!isGameOver) {
         context.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
@@ -136,12 +144,13 @@ function draw() {
         requestAnimationFrame(draw);
     } else {
         if (isGameWin) {
-           document.getElementById("WinOrLose").innerHTML= "YOU WIN";
+            document.getElementById("WinOrLose").innerHTML = "YOU WIN";
         } else {
-            document.getElementById("WinOrLose").innerHTML= "YOU LOSE";
+            document.getElementById("WinOrLose").innerHTML = "YOU LOSE";
         }
     }
 }
-function restart(){
+
+function restart() {
     document.location.reload();
 }
