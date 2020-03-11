@@ -1,6 +1,6 @@
 function draw() {
     if (!isGameOver) {
-        context.clearRect(0, 0, canvas.clientWidth, canvas.clientHeight);
+        context.clearRect(0, 0, Canvas.clientWidth, Canvas.clientHeight);
         ball.drawBall();
         paddle.DrawPaddle();
         brick.DrawBrick();

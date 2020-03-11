@@ -70,4 +70,4 @@ let Ball = function (x, y, dx, dy, radius) {
         })
     }
 };
-let ball = new Ball(30, canvas.clientHeight - 40, 1, 1, 10);
+let ball = new Ball(30, Canvas.clientHeight - 40, 1, 1, 10);
