@@ -1,0 +1,26 @@
+#style {
+    margin-left: 400px;
+}
+
+#canvas {
+    background-color: lightskyblue;
+}
+
+#title {
+    margin-left: 460px;
+    color: blue;
+}
+
+p {
+    margin-left: 600px;
+    color: crimson;
+}
+
+#WinOrLose {
+    color: green;
+    margin-left: 170px;
+}
+
+#color {
+    background-color: yellow;
+}

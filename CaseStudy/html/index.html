@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        canvas {
+            border: 1px solid darkblue;
+        }
+    </style>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+<div id="color">
+    <div>
+        <h1 id="title">Brick Shooting Game</h1>
+        <p id="score"></p>
+    </div>
+    <div id="style">
+        <h2 id="WinOrLose"></h2><br>
+        <canvas id="canvas" width="500" height="400"></canvas>
+        <br>
+        <button onclick="draw()" type="button">Start</button>
+        <button type="button" onclick="restart()">restart</button>
+    </div>
+</div>
+<script src="../js/DrawBallAndCheckBall.js"></script>
+<script src="../js/DrawPaddle.js"></script>
+<script src="../js/DrawBrick.js"></script>
+<script src="../js/Draw.js"></script>
+</body>
+</html>
