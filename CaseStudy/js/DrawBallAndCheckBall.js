@@ -29,14 +29,14 @@ let Ball = function (x, y, dx, dy, radius) {
         }
     };
     this.checkBallWidthBorder = function () {
-        if (this.y > canvas.clientHeight - this.radius) {
+        if (this.y > Canvas.clientHeight - this.radius) {
             isGameOver = true;
         }
     };
     this.checkBallWidthPaddle = function () {
         if (this.x + this.radius >= paddle.x
             && this.x + this.radius <= paddle.x + paddle.width
-            && this.y + this.radius >= canvas.clientHeight - paddle.height) {
+            && this.y + this.radius >= Canvas.clientHeight - paddle.height) {
             this.dy = -this.dy;
         }
     };
